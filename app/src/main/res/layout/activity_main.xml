@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/getStarted"
+        android:layout_width="275dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="212dp"
+        android:background="@drawable/button_background"
+        android:text="Get Started"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/introheadingtext"
+        android:layout_width="342dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginBottom="441dp"
+        android:fontFamily="@font/montserrat"
+        android:text="   Make your Phones camera smarter"
+        android:textColor="#163560"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="302dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="59dp"
+        android:alpha="0.72"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="8sp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim, sed ut sit faucibus nibh faucibus eget. A tincidunt tellus vestibulum."
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:translationY="-4sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="406dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_imagesundraw"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="69dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
