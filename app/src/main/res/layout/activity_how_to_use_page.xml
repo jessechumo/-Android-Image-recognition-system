@@ -13,12 +13,15 @@
         android:layout_height="30dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="172dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="202dp"
         android:fontFamily="@font/montserrat"
         android:gravity="center_horizontal|center_vertical"
         android:text="How To Use"
         android:textColor="#163560"
         android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,30 +41,51 @@
         android:gravity="center_vertical"
         android:lineSpacingExtra="5sp"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/howToUseContent"
-        app:layout_constraintVertical_bias="1.0"
-        android:textColor="#000000"/>
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="356dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_ios_24px" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_cogwheel_gear_svgrepo_com"
-        tools:layout_editor_absoluteX="324dp"
-        tools:layout_editor_absoluteY="696dp" />
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/howToUseParagraph"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_group" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imageView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_cogwheel_gear_svgrepo_com___copy"
-        tools:layout_editor_absoluteX="244dp"
-        tools:layout_editor_absoluteY="568dp" />
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_frame" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

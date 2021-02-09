@@ -2,7 +2,10 @@ package com.example.imagerecognitionsystem;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 public class AboutPage extends AppCompatActivity {
 
@@ -10,5 +13,17 @@ public class AboutPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_page);
+        ImageView backarrow = (ImageView) findViewById(R.id.imageView8);
+        backarrow.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                headBack();
+            }
+        });
     }
+    public void  headBack() {
+        Intent intent = new Intent(this, mainAppPage.class);
+        startActivity(intent);
+    }
+
 }
