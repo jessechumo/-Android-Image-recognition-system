@@ -4,6 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".galleryImport">
+    android:background="#EFEFEF"
+    tools:context=".GalleryImport">
 
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="411dp"
+        android:layout_height="329dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="452dp"
+        app:srcCompat="@drawable/ic_gallery_photo_svgrepo_com"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="354dp"
+        android:background="@drawable/button_background"
+        android:text="gallery"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="354dp"
+        android:background="@drawable/button_background"
+        android:text="Predict"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="314dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="120dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Choose an image from the gallery and press predict"
+        android:textColor="#000000"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

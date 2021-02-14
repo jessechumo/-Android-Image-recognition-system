@@ -19,6 +19,7 @@ import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 
 class GalleryImport : AppCompatActivity() {
 
+    // Initializing the variables for bitmap & imageview
     lateinit var bitmap: Bitmap
     lateinit var imgview: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,7 +33,7 @@ class GalleryImport : AppCompatActivity() {
 
         var tv:TextView = findViewById(R.id.textView2)
 
-        var select:Button = findViewById(R.id.button)
+        var select:Button = findViewById(R.id.button) //functionality of the select button.
         select.setOnClickListener(View.OnClickListener {
             var intent : Intent = Intent(Intent.ACTION_GET_CONTENT)
             intent.type = "image/*"
@@ -42,7 +43,7 @@ class GalleryImport : AppCompatActivity() {
         })
         var predict:Button = findViewById(R.id.button2) //functionality for predict button
         predict.setOnClickListener(View.OnClickListener {
-            var resized: Bitmap = Bitmap.createScaledBitmap(bitmap, 224,224, true)// resizing the bitmap.
+            var resized: Bitmap = Bitmap.createScaledBitmap(bitmap, 224,224, true)// resizing the bitmap to size of prediction model.
             val model = MobilenetV110224Quant.newInstance(this)
 
 // Creates inputs for reference.
